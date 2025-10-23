@@ -1,0 +1,13 @@
+Abaikan folder dependensi Node.js
+
+node_modules
+
+Abaikan file log npm
+
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+Abaikan file environment (jika Anda menambahkannya nanti)
+
+.env
