@@ -29,9 +29,43 @@
 <body class="gradient-bg min-h-screen antialiased text-slate-800">
 
     <!-- Container Utama -->
-    <div class="container mx-auto px-6 py-12 md:py-20">
+    <!-- Padding atas (pt-8) ditambahkan untuk memberi ruang pada logo bar baru -->
+    <div class="container mx-auto px-6 pt-8 pb-12 md:pt-12 md:pb-20">
 
-        <!-- Header -->
+        <!-- ===== BAGIAN LOGO BARU ===== -->
+        <div class="flex justify-between items-center mb-12 md:mb-16">
+            <!-- Logo Kiri: Utama -->
+            <div>
+                <!-- 
+                  CATATAN: 
+                  Pastikan Anda membuat folder 'public/images/' 
+                  dan menempatkan 'logo-mij.png' di dalamnya.
+                -->
+                <!-- UKURAN DIPERBESAR: h-16 -> h-20 md:h-24 -->
+                <img src="/images/logo-mij.png" alt="Logo MIJ" 
+                     class="h-20 md:h-24 w-auto" 
+                     onerror="this.src='https://placehold.co/150x60/f8fafc/0f172a?text=Logo+MIJ'; this.onerror=null;">
+            </div>
+            
+            <!-- Logo Kanan: Akreditasi -->
+            <div class="flex items-center gap-x-4 md:gap-x-6">
+                <!-- 
+                  CATATAN: 
+                  Letakkan 5 file logo akreditasi Anda di folder 'public/images/'
+                  dan pastikan nama filenya sesuai.
+                -->
+                <!-- UKURAN DIPERBESAR: h-10/h-8 -> h-10 md:h-12 -->
+                <img src="/images/logo-cambridge.png" alt="Cambridge" class="h-10 md:h-12 w-auto grayscale opacity-50 hover:grayscale-0 hover:opacity-100 transition-all duration-300" title="Cambridge International School">
+                <img src="/images/logo-iso.png" alt="ISO 9001" class="h-10 md:h-12 w-auto grayscale opacity-50 hover:grayscale-0 hover:opacity-100 transition-all duration-300" title="Quality Approved ISO 9001">
+                <img src="/images/logo-dgi.png" alt="DGI Cert" class="h-10 md:h-12 w-auto grayscale opacity-50 hover:grayscale-0 hover:opacity-100 transition-all duration-300" title="DGI Cert ISO 21001:2018">
+                <img src="/images/logo-jasanz.png" alt="JAS-ANZ" class="h-10 md:h-12 w-auto grayscale opacity-50 hover:grayscale-0 hover:opacity-100 transition-all duration-300" title="JAS-ANZ">
+                <img src="/images/logo-iaf.png" alt="IAF" class="h-10 md:h-12 w-auto grayscale opacity-50 hover:grayscale-0 hover:opacity-100 transition-all duration-300" title="International Accreditation Forum">
+            </div>
+        </div>
+        <!-- ===== AKHIR BAGIAN LOGO BARU ===== -->
+
+
+        <!-- Header Teks (yang sudah ada) -->
         <header class="text-center mb-12 md:mb-16">
             <h1 class="text-4xl md:text-5xl font-bold text-slate-900 tracking-tight">
                 MIJ Service Hub
@@ -40,7 +74,7 @@
                 Pusat Layanan Aplikasi Internal untuk Mendukung Operasional Madrasah Istiqlal Jakarta.
             </p>
         </header>
-        <!-- Akhir Header -->
+        <!-- Akhir Header Teks -->
 
         <!-- Grid untuk Kartu Aplikasi -->
         <!-- Updated grid columns to lg:grid-cols-4 -->
@@ -120,21 +154,6 @@
             </div>
             <!-- Akhir Kartu 4 -->
 
-            <!-- Kartu Placeholder Masih Ada (Jika Dibutuhkan) -->
-            <!-- 
-             <div class="card border-2 border-dashed border-slate-300 rounded-xl p-8 flex flex-col items-center justify-center text-center">
-                <div class="icon-wrapper bg-slate-100 text-slate-400 p-4 rounded-full mb-6">
-                     <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
-                        <path stroke-linecap="round" stroke-linejoin="round" d="M12 4v16m8-8H4" />
-                     </svg>
-                </div>
-                <h2 class="text-2xl font-bold text-slate-600 mb-3">Layanan Baru</h2>
-                <p class="text-slate-500">
-                    Aplikasi dan layanan baru akan ditambahkan di sini.
-                </p>
-            </div> 
-            -->
-
         </main>
         <!-- Akhir Grid -->
 
@@ -152,4 +171,3 @@
 
 </body>
 </html>
-
